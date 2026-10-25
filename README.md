@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Multi-format encoding, decoding, analysis & crypto
+OConvertX is a multi-format data conversion workbench for encoding, decoding, and analysing text and binary payloads. It covers classical ciphers, modern encodings, and crypto helpers in one interactive suite so analysts can transform evidence without chaining many one-off utilities. Built for defensive forensics and CTF-style investigation on OwlSec systems.
 
 ---
 
 ## ✨ Features
 
-- Multi-format data encoder/decoder supporting 20 conversion methods including Hex, Base64, Morse, and URL.
+- Bidirectional conversions across Hex, Binary, ASCII, Base64/32/58/85/91, URL, HTML entities, and Quoted-Printable
+- Classical and puzzle ciphers: ROT13/47, Caesar, Morse, Braille, Bacon, Atbash, and Vigenère
+- JWT decode, Unicode escape, and Punycode helpers for token and IDN inspection
+- Crypto-oriented transforms alongside general text↔binary analysis utilities
+- Interactive GUI workflow suited to rapid encode/decode experimentation
+- Designed as the broad conversion suite (complementary to OEncode’s CLI chain engine)
 
 ---
 
@@ -39,6 +44,7 @@ Multi-format encoding, decoding, analysis & crypto
 
 ```bash
 ./OConvertX
+./OConvertX --help
 ```
 
 ---
